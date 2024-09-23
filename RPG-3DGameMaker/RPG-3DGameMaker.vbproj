@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AEC098FE-1A1C-4657-96BE-85EB4ABFACDD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>RPG_3DGameMaker.My.MyApplication</StartupObject>
+    <RootNamespace>RPG_3DGameMaker</RootNamespace>
+    <AssemblyName>RPG-3DGameMaker</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>RPG-3DGameMaker.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>RPG-3DGameMaker.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmBackdrops.Designer.vb">
+      <DependentUpon>frmBackdrops.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBackdrops.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClericSpells.Designer.vb">
+      <DependentUpon>frmClericSpells.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmClericSpells.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClothes.Designer.vb">
+      <DependentUpon>frmClothes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmClothes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCoupleDoors.Designer.vb">
+      <DependentUpon>frmCoupleDoors.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCoupleDoors.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCoupleTreps.Designer.vb">
+      <DependentUpon>frmCoupleTreps.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCoupleTreps.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDefineWallItems.Designer.vb">
+      <DependentUpon>frmDefineWallItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDefineWallItems.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDoorTypes.Designer.vb">
+      <DependentUpon>frmDoorTypes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDoorTypes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditGame.Designer.vb">
+      <DependentUpon>frmEditGame.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditGame.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEffects.Designer.vb">
+      <DependentUpon>frmEffects.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEffects.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGame.Designer.vb">
+      <DependentUpon>frmGame.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGame.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGameField.Designer.vb">
+      <DependentUpon>frmGameField.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGameField.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGameField2.Designer.vb">
+      <DependentUpon>frmGameField2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGameField2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGenerateDoors.Designer.vb">
+      <DependentUpon>frmGenerateDoors.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGenerateDoors.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGenerateTreps.Designer.vb">
+      <DependentUpon>frmGenerateTreps.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGenerateTreps.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmItem.Designer.vb">
+      <DependentUpon>frmItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKeyLocks.Designer.vb">
+      <DependentUpon>frmKeyLocks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmKeyLocks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKeys.Designer.vb">
+      <DependentUpon>frmKeys.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmKeys.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMageSpells.Designer.vb">
+      <DependentUpon>frmMageSpells.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMageSpells.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMakeMaps.Designer.vb">
+      <DependentUpon>frmMakeMaps.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMakeMaps.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMap.Designer.vb">
+      <DependentUpon>frmMap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMapItems.Designer.vb">
+      <DependentUpon>frmMapItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMapItems.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMapMonsters.Designer.vb">
+      <DependentUpon>frmMapMonsters.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMapMonsters.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMisc.Designer.vb">
+      <DependentUpon>frmMisc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMisc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMonsters.Designer.vb">
+      <DependentUpon>frmMonsters.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMonsters.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSideWalls.Designer.vb">
+      <DependentUpon>frmSideWalls.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSideWalls.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStairTypes.Designer.vb">
+      <DependentUpon>frmStairTypes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmStairTypes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWallItems.Designer.vb">
+      <DependentUpon>frmWallItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWallItems.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWalls.Designer.vb">
+      <DependentUpon>frmWalls.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWalls.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWeapons.Designer.vb">
+      <DependentUpon>frmWeapons.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWeapons.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Globals.vb" />
+    <Compile Include="MainMenu.Designer.vb">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindow.Designer.vb">
+      <DependentUpon>MainWindow.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmBackdrops.resx">
+      <DependentUpon>frmBackdrops.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClericSpells.resx">
+      <DependentUpon>frmClericSpells.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClothes.resx">
+      <DependentUpon>frmClothes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCoupleDoors.resx">
+      <DependentUpon>frmCoupleDoors.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCoupleTreps.resx">
+      <DependentUpon>frmCoupleTreps.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDefineWallItems.resx">
+      <DependentUpon>frmDefineWallItems.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDoorTypes.resx">
+      <DependentUpon>frmDoorTypes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditGame.resx">
+      <DependentUpon>frmEditGame.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEffects.resx">
+      <DependentUpon>frmEffects.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGame.resx">
+      <DependentUpon>frmGame.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGameField.resx">
+      <DependentUpon>frmGameField.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGameField2.resx">
+      <DependentUpon>frmGameField2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGenerateDoors.resx">
+      <DependentUpon>frmGenerateDoors.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGenerateTreps.resx">
+      <DependentUpon>frmGenerateTreps.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmItem.resx">
+      <DependentUpon>frmItem.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKeyLocks.resx">
+      <DependentUpon>frmKeyLocks.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKeys.resx">
+      <DependentUpon>frmKeys.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMageSpells.resx">
+      <DependentUpon>frmMageSpells.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMakeMaps.resx">
+      <DependentUpon>frmMakeMaps.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMap.resx">
+      <DependentUpon>frmMap.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMapItems.resx">
+      <DependentUpon>frmMapItems.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMapMonsters.resx">
+      <DependentUpon>frmMapMonsters.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMisc.resx">
+      <DependentUpon>frmMisc.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMonsters.resx">
+      <DependentUpon>frmMonsters.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSideWalls.resx">
+      <DependentUpon>frmSideWalls.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStairTypes.resx">
+      <DependentUpon>frmStairTypes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWallItems.resx">
+      <DependentUpon>frmWallItems.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWalls.resx">
+      <DependentUpon>frmWalls.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWeapons.resx">
+      <DependentUpon>frmWeapons.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainWindow.resx">
+      <DependentUpon>MainWindow.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADOX">
+      <Guid>{00000600-0000-0010-8000-00AA006D2EA4}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
