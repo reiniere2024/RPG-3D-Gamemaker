@@ -10,7 +10,7 @@ monsters from your RPG 3D Game.
 At the end you Generate the RPG 3D Game and then a separate RPG Database
 will be created which can be used in a RPG 3D Game like f.i. Dark Moon RPG.
 
-When you open the solution in Visual Studio then don't forget to move all the maps 
+When you open the solution in Visual Studio 2008 then don't forget to move all the maps 
 (except My Project) to the bin/debug directory when you want to run the code.
 
 Good luck,
